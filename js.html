@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+
+
+
+<body>
+	<p id="text">Click Me</p>
+
+	<button id="button">Click</button>
+
+	<p id="text2">Click Me</p>
+
+	<button id="button2">Click</button>
+
+
+	<script type="text/javascript">
+		 document.getElementById("button").onclick = function() {
+		 	document.getElementById("text").innerHTML = "Thanks"
+		 	document.getElementById("text2").innerHTML = "NOW CLICK ME"
+		 	document.getElementById("text2").style.fontSize = "30px"
+		 	
+
+		 	document.getElementById("button2").onclick = function() {
+		 		document.getElementById("text2").innerHTML = "Thanks"
+		 		document.getElementById("text").innerHTML = "NOW CLICK ME"
+		 	    document.getElementById("text").style.fontSize = "30px"
+
+
+
+
+
+
+		 	}
+		 }
+	</script>
+
+
+
+</body>
+
+
+
+</html>
