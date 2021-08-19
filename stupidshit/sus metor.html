@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>SUS Metor</title>
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+
+
+
+<body id="background" background="why1.jpg">
+
+
+
+
+	<style type="text/css">
+
+
+
+
+	.center {
+
+		float: left;
+		margin-left: 500px;
+	}
+
+	#number {
+
+		font-size: 100px;
+		margin-left: -180px;
+		margin-top: 300px;
+		color: whitesmoke;
+
+		
+	}
+
+
+	#button {
+
+		width: 250px;
+		height: 50px;
+		font-size: 20px;
+
+	}
+
+	#why {
+
+		font-size: 100px;
+		margin-left: -350px;
+		margin-top: 100px;
+		color: whitesmoke;
+	}
+
+  
+
+
+
+	
+
+	</style>
+
+
+	<button id="button" class="center">Test</button>
+
+    <p id="number"class="center"></p>
+
+    <p id="why" class="center">Are You GAH  ??</p>
+
+    <audio id="audio" src="audio.mp3"></audio>
+
+
+	
+
+	<script type="text/javascript">
+
+
+
+		document.getElementById("background")
+
+		var random = Math.floor(Math.random() * 100) +1;
+
+		console.log(random);
+        
+		document.getElementById("button").onclick = function() {
+
+			var random = Math.floor(Math.random() * 100) +1;
+
+		    //console.log(random);
+
+			document.getElementById("number").innerHTML = random + "%"
+
+			if (random < 50) {
+  document.getElementById("why").innerHTML = "why are you gah?";
+  document.body.style.backgroundImage = "url('why2.jpg')";
+  document.getElementById("audio").pause();
+
+}
+
+			if (random > 50) {
+				document.getElementById("why").innerHTML = "not gah nice !";
+				document.body.style.backgroundImage = "url('why3.jpg')";
+				document.getElementById("audio").play();
+
+			}
+
+
+		}
+
+
+
+   
+
+		
+		
+	</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
